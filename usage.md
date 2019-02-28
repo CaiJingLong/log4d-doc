@@ -18,6 +18,10 @@ import 'package:log4d/log4d.dart';
 class LogHelper {
   Log4dClient _client;
 
+  bool isLog = true;
+
+  bool isRemote = true;
+
   LogHelper._() {
     _client = Log4dClient();
   }
@@ -34,11 +38,15 @@ class LogHelper {
   }
 
   void info(String msg) {
-    _client.sendEntity(
-      LogEntity()
-        ..level = Level.info
-        ..msg = msg,
-    );
+    if (isLog) print(msg);
+    
+    if (isLog && isRemote) {
+      _client.sendEntity(
+        LogEntity()
+          ..level = Level.info
+          ..msg = msg,
+      );
+    }
   }
 }
 
@@ -54,4 +62,11 @@ void main() async {
 
   log.info("你好");
 }
+```
+
+## Stop use
+
+```dart
+LogHelper().isLog = false;
+LogHelper().isRemote = false;
 ```
