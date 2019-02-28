@@ -1,6 +1,6 @@
 # Server
 
-## install
+## Install
 
 before install you need see [pub global](https://www.dartlang.org/tools/pub/cmd/pub-global)
 
@@ -25,3 +25,4 @@ $ log4d -h
 -c, --[no-]console    show log in console
                       (defaults to on)
 ```
+
