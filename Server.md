@@ -10,10 +10,7 @@ pub global activate log4d
 
 ## Usage
 
-```bash
-log4d
-```
-
+### Help
 
 ```bash
 $ log4d -h
@@ -24,5 +21,21 @@ $ log4d -h
 -h, --[no-]help       usage
 -c, --[no-]console    show log in console
                       (defaults to on)
+```
+
+### Use
+
+1. use
+
+```bash
+log4d
+```
+
+2. simple use 
+
+```bash
+mkdir -p /tmp/logs
+cd /tmp/logs
+log4d -o log1.log
 ```
 
