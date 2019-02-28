@@ -1,3 +1,34 @@
-# First Chapter
+# Server
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+## install
+
+
+
+\#\#
+
+install
+
+  
+
+
+before install you need see
+
+\[
+
+pub global
+
+\]
+
+\(https://www.dartlang.org/tools/pub/cmd/pub-global\)
+
+  
+
+
+\`\`\`bash
+
+pub global activate log4d
+
+\`\`\`
+
+
+
