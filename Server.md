@@ -25,13 +25,13 @@ $ log4d -h
 
 ### Use
 
-1. use
+#### use
 
 ```bash
 log4d
 ```
 
-2. simple use 
+#### simple use 
 
 ```bash
 mkdir -p /tmp/logs
