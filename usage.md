@@ -70,3 +70,8 @@ void main() async {
 LogHelper().isLog = false;
 LogHelper().isRemote = false;
 ```
+
+## Other
+
+Only suitable for local debugging.  
+With a WebSocket connection, it will not automatically reconnect when it is disconnected abnormally.
